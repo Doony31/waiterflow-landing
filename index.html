@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Mockup</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navHero.css">
+    <link rel="stylesheet" href="css/PruebaSocial.css">    
+    <link rel="stylesheet" href="css/BeneficiosStripe.css">
+    <link rel="stylesheet" href="css/ComoFunciona.css">
+    <link rel="stylesheet" href="css/testimonios.css">
+    <link rel="stylesheet" href="css/segundoCTA.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">LOGO</a>
+            
+            <ul class="nav-links">
+                <li><a href="#beneficios">beneficios</a></li>
+                <li><a href="#usuarios">usuarios</a></li>
+                <li><a href="#contacto">contacto</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="overlay"></div>
+            <video autoplay loop muted playsinline>
+                <source src="images/hero_video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Acelera el servicio de tu restaurante y aumenta la rotación de tus mesas</h1>
+            <h2 class="hero-subtitle">Digitalizamos la toma de pedidos y la comunicación con cocina en tiempo real. Elimina las comandas de papel, reduce los tiempos de espera y despídete de los errores de facturación.</h2>
+            <a href="#contacto" class="hero-btn">CONTACTANOS</a>
+        </div>
+    </section>
+
+
+    <section class="social-proof">
+        <div class="trust-container">
+            <div class="team-column">
+            <h2>Nuestro equipo</h2>
+            <p>
+                Somos una startup tecnológica fundada por Mathias Cusi y Freddy Canta, ingenieros de software dedicados a transformar la operación interna de los restaurantes tradicionales mediante soluciones digitales asequibles. Creemos que la tecnología de alto impacto no debe ser exclusiva de las grandes cadenas.
+            </p>
+            
+            <div class="team-members">
+                <div class="member">
+                <img src="images/mockup.jpg" alt="Mathias Cusi" class="avatar">
+                <div class="member-info">
+                    <strong>Mathias Cusi</strong>
+                    <span>Ingeniería de Software</span>
+                </div>
+                </div>
+                <div class="member">
+                <img src="images/mockup.jpg" alt="Freddy Canta" class="avatar">
+                <div class="member-info">
+                    <strong>Freddy Canta</strong>
+                    <span>Ingeniería de Software</span>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="metrics-column">
+            <h2>Qué ofrecemos</h2>
+            <div class="metrics-stack">
+                
+                <div class="metric-card">
+                <div class="metric-header">
+                    <span class="metric-number">+15%</span>
+                    <span class="metric-title">Eficiencia Operativa Recuperada</span>
+                </div>
+                <p class="metric-desc">Eliminando tiempos muertos y desplazamientos físicos.</p>
+                </div>
+
+                <div class="metric-card">
+                <div class="metric-header">
+                    <span class="metric-number">-20%</span>
+                    <span class="metric-title">Tiempo de Estancia por Mesa</span>
+                </div>
+                <p class="metric-desc">Atención ágil para una mayor rotación de clientes.</p>
+                </div>
+
+                <div class="metric-card">
+                <div class="metric-header">
+                    <span class="metric-number">-90%</span>
+                    <span class="metric-title">Errores de Facturación</span>
+                </div>
+                <p class="metric-desc">Cálculos automatizados de subtotales e impuestos.</p>
+                </div>
+
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="stripe-benefits" id="beneficios">
+        <div class="stripe-header">
+            <h2 class="stripe-title">
+                <strong>Todo lo que tu restaurante necesita</strong>, sin complicaciones
+            </h2>
+        </div>
+        
+        <div class="bento-grid">
+            <div class="bento-card card-wide bento-trigger"       
+            data-subtitle = "Beneficio 1" 
+            data-title="Adiós a las caminatas" 
+            data-text="El mesero envía la orden directamente a la cocina con un solo clic, sin abandonar su zona de atención."
+            data-img="images/beneficio1.png">
+                
+                <div class="bento-content">
+                    <h3>Adiós a las caminatas</h3>
+                    <div class="bento-icon-expand">⤢</div>
+                </div>
+                <div class="bento-img-wrapper">
+                    <img src="images/beneficio1.png" alt="Fondo" class="bento-img">
+                </div>
+            </div>
+
+            <div class="bento-card card-narrow bento-trigger"
+            data-subtitle = "Beneficio 2" 
+            data-title="Platos siempre calientes" 
+            data-text="El sistema envía una alerta visual y sonora al móvil del mesero en el instante exacto en que la cocina marca el plato como listo."
+            data-img="images/beneficio2.png">
+                <div class="bento-content">
+                    <h3>Platos siempre calientes</h3>
+                    <div class="bento-icon-expand">⤢</div>
+                </div>
+                <div class="bento-img-wrapper">
+                    <img src="images/beneficio2.png" alt="Fondo" class="bento-img">
+                </div>
+            </div>
+
+            <div class="bento-card card-square bento-trigger"
+            data-subtitle = "Beneficio 3" 
+            data-title="Cuentas exactas y automáticas" 
+            data-text="El cierre de mesa consolida todos los ítems y calcula el 18% de IGV al instante, bloqueando modificaciones manuales para blindar tus finanzas."
+            data-img="images/beneficio3.png">
+                <div class="bento-content">
+                    <h3>Cuentas exactas y automáticas</h3>
+                    <div class="bento-icon-expand">⤢</div>
+                </div>
+                <div class="bento-img-wrapper">
+                    <img src="images/beneficio3.png" alt="Fondo" class="bento-img">
+                </div>
+            </div>
+
+            <div class="bento-card card-square bento-trigger"
+            data-subtitle = "Beneficio 4" 
+            data-title="Cocina organizada (KDS)" 
+            data-text="Reemplazamos los papeles mojados por un monitor interactivo que ordena visualmente los tickets por tiempo de llegada y resalta las observaciones especiales del cliente."
+            data-img="images/beneficio4.png">
+                <div class="bento-content">
+                    <h3>Cocina organizada (KDS)</h3>
+                    <div class="bento-icon-expand">⤢</div>
+                </div>
+                <div class="bento-img-wrapper">
+                    <img src="images/beneficio4.png" alt="Fondo" class="bento-img">
+                </div>
+            </div>
+
+            <div class="bento-card card-square bento-trigger"
+            data-subtitle = "Beneficio 5" 
+            data-title="Funciona sin internet" 
+            data-text="La aplicación cuenta con modo offline, permitiendo consultar el menú y la estructura del salón incluso si hay cortes en la red del local."
+            data-img="images/beneficio6.png">
+                <div class="bento-content">
+                    <h3>¿Sin internet? No hay problema</h3>
+                    <div class="bento-icon-expand">⤢</div>
+                </div>
+                <div class="bento-img-wrapper">
+                    <img src="images/beneficio6.png" alt="Fondo" class="bento-img">
+                </div>
+            </div>
+
+            <div class="bento-card card-full bento-trigger"
+            data-subtitle = "Beneficio 6" 
+            data-title="Cero fricción tecnológica" 
+            data-text="Interfaz visual codificada por colores (mesas libres en verde, ocupadas en rojo) diseñada para que el personal la domine en minutos, sin capacitación formal."
+            data-img="images/beneficio5.png">
+                <div class="bento-content">
+                    <h3>Cero fricción tecnológica</h3>
+                    <div class="bento-icon-expand">⤢</div>
+                </div>
+                <div class="bento-img-wrapper">
+                    <img src="images/beneficio5.png" alt="Fondo" class="bento-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-overlay" id="benefit-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            
+            <div class="modal-header">
+                <span class="modal-subtitle">Subtítulo genérico ampliado</span>
+                <h2 class="modal-title">Titular genérico de la característica.</h2>
+            </div>
+            
+            <div class="modal-body">
+                <div class="modal-text-box">
+                    <p><strong>Lo másff importante va en negrita.</strong> Aquí va un texto genérico de relleno que explica en profundidad por qué este beneficio es útil. Describe las características y aporta valor al usuario de forma clara y directa.</p>
+                </div>
+                <div class="modal-img-container">
+                    <img src="images/mockup.jpg" alt="Detalle del beneficio">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="process-section">
+        <div class="process-container">
+            <h2 class="process-title">Un flujo de trabajo digital y sincronizado en 4 pasos</h2>
+            
+            <div class="process-list">
+                <div class="process-line"></div>
+
+                <div class="process-step">
+                    <div class="process-image">
+                        <img src="images/proceso_paso1.png" alt="Paso 1 del proceso">
+                    </div>
+                    <div class="process-node"></div>
+                    <div class="process-text">
+                        <h3>Toma de orden digital</h3>
+                        <p>El mesero selecciona una mesa libre en su móvil, elige los platos del catálogo categorizado y anota preferencias especiales (ej. "Término 3/4").</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-image">
+                        <img src="images/proceso_paso2.png" alt="Paso 2 del proceso">
+                    </div>
+                    <div class="process-node"></div>
+                    <div class="process-text">
+                        <h3>Sincronización instantánea</h3>
+                        <p>Al confirmar, la orden aparece inmediatamente en el Monitor de Cocina (KDS), organizada en una columna de "Pendientes".</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-image">
+                        <img src="images/proceso_paso3.png" alt="Paso 3 del proceso">
+                    </div>
+                    <div class="process-node"></div>
+                    <div class="process-text">
+                        <h3>Preparación y alerta</h3>
+                        <p>El cocinero actualiza el estado del plato de "En Preparación" a "Listo", disparando una notificación en tiempo real al dispositivo del mesero.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-image">
+                        <img src="images/proceso_paso4.png" alt="Paso 3 del proceso">
+                    </div>
+                    <div class="process-node"></div>
+                    <div class="process-text">
+                        <h3>Facturación sin errores</h3>
+                        <p>Al finalizar, el sistema calcula automáticamente el total de la cuenta. Se selecciona el método de pago (Efectivo, Tarjeta, Yape) y la mesa vuelve a estar libre.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="usuarios">
+        <div class="testim-container">
+            <div class="testim-header">
+                <h2 class="testim-title">Diseñado para el éxito de<br>tu negocio</h2>
+                <div class="testim-controls">
+                    <button class="testim-btn" id="testim-prev" aria-label="Anterior">&#8592;</button>
+                    <button class="testim-btn" id="testim-next" aria-label="Siguiente">&#8594;</button>
+                </div>
+            </div>
+
+            <div class="testim-track" id="testim-track">
+                
+                <div class="testim-card">
+                    <img src="images/mesero_testimonio.png" alt="Fondo testimonio" class="testim-bg">
+                    <div class="testim-overlay"></div>
+                    <div class="testim-logo">Mesero</div>
+                    <div class="testim-content">
+                        <div class="testim-text">
+                            <h3 class="testim-stat">Mayor productividad</h3>
+                            <p class="testim-desc">"Ya no corro a la cocina; la aplicación me avisa directamente a mi pantalla cuando el plato está listo para recoger."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testim-card">
+                    <img src="images/cocinero_testimonio.png" alt="Fondo testimonio" class="testim-bg">
+                    <div class="testim-overlay"></div>
+                    <div class="testim-logo">Cocinero</div>
+                    <div class="testim-content">
+                        <div class="testim-text">
+                            <h3 class="testim-stat">Mejor organizacion</h3>
+                            <p class="testim-desc">"Veo todas las órdenes ordenadas por prioridad en una pantalla táctil, sin tener que descifrar letras ilegibles ni lidiar con papel mojado o perdido."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testim-card">
+                    <img src="images/cliente_testimonio.png" alt="Fondo testimonio" class="testim-bg">
+                    <div class="testim-overlay"></div>
+                    <div class="testim-logo">Cliente</div>
+                    <div class="testim-content">
+                        <div class="testim-text">
+                            <h3 class="testim-stat">Clientes felices</h3>
+                            <p class="testim-desc">"El mesero no se despega del salón. Sé que mi pedido entra en proceso rápido y puedo pedir la cuenta exacta sin demoras."</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-whatsapp-section" id="contacto">
+        <div class="cta-wa-container">
+            <div class="cta-wa-status">
+                <span class="status-text">Agentes disponibles en línea</span>
+            </div>
+            
+            <h2 class="cta-wa-title">¿Listo para llevar tu restaurante al siguiente nivel?</h2>
+            <p class="cta-wa-desc">Habla directamente con un experto de nuestra agencia a través de WhatsApp y comienza un verdadero cambio hoy mismo.</p>
+
+            <a href="https://wa.me/51944409551?text=Hola,%20quisiera%20más%20información%20sobre%20sus%20servicios%20para%20mi%20restaurante." target="_blank" class="cta-wa-btn">
+                <svg class="wa-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/>
+                </svg>
+                Iniciar chat ahora
+            </a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p class="copyright-text">© 2026 ByteBistro Solutions. Landing page para el curso Diseño y Patrones de Software.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Política de Privacidad</a>
+                <a href="#" class="footer-link">Términos Legales</a>
+            </div>
+        </div>
+    </footer>       
+
+    <script src="js/script.js"></script>
+</body>
+</html>
