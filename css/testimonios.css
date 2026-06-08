@@ -1,0 +1,160 @@
+.testimonials {
+    background-color: #050505; 
+    padding: 6rem 0 6rem 5%;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.testim-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1400px;
+    margin: 0 auto 3rem auto;
+    padding-right: 5%;
+}
+
+.testim-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.testim-controls {
+    display: flex;
+    gap: 1rem;
+}
+
+.testim-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.testim-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.testim-track {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: 2rem;
+    padding-right: 5%;
+    justify-content: space-around;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+.testim-track::-webkit-scrollbar {
+    display: none;
+}
+
+.testim-card {
+    flex: 0 0 auto;
+    width: 380px;
+    height: 520px;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testim-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.testim-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.4) 40%, transparent 100%);
+    z-index: 2;
+}
+
+.testim-logo {
+    position: relative;
+    z-index: 3;
+    padding: 2rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testim-content {
+    position: relative;
+    z-index: 3;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.testim-text {
+    max-width: 80%;
+}
+
+.testim-stat {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.testim-desc {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
+}
+
+.testim-link:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+@media (min-width: 1316px) {
+    .testim-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .testim-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    
+    .testim-card {
+        width: 300px;
+        height: 450px;
+    }
+
+    .testim-stat {
+        font-size: 2.5rem;
+    }
+}
